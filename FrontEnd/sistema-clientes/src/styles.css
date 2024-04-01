@@ -1,0 +1,22 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.btn-primary {
+  background-color: #00586f;
+  border-color: #00586f;
+}
+
+.text-primary {
+  color: #00586f;
+}
+
+.bg-primary {
+  background-color: #00586f;
+}
+
+.btn-primary:hover {
+  background-color: #11728b;
+}
+
+body {
+  font-family: "Montserrat" !important;
+}

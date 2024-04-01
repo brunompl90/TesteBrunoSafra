@@ -1,0 +1,31 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "João",
+      "cpf": "12345678901",
+      "dataNascimento": "1990-01-01",
+      "rendaMensal": 3000,
+      "email": "joao@example.com",
+      "dataCadastro": "2022-03-20"
+    },
+    {
+      "id": 2,
+      "nome": "Maria",
+      "cpf": "98765432109",
+      "dataNascimento": "1985-05-15",
+      "rendaMensal": 5000,
+      "email": "maria@example.com",
+      "dataCadastro": "2022-03-22"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos",
+      "cpf": "23456789012",
+      "dataNascimento": "1978-10-10",
+      "rendaMensal": 8000,
+      "email": "carlos@example.com",
+      "dataCadastro": "2022-03-25"
+    }
+  ]
+}

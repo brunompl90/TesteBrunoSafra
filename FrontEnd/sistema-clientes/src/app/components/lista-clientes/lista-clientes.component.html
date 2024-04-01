@@ -1,0 +1,67 @@
+<div class="container">
+  <h2>Lista de Clientes</h2>
+  <button class="btn btn-primary mb-3" [routerLink]="['/cadastrar-cliente']">
+    Cadastrar Cliente
+  </button>
+
+  <h3>Filtros</h3>
+  <!-- Filtros -->
+  <div class="row">
+    <div class="mb-3 col-sm-4">
+      <label for="filtroNome" class="form-label">Nome Cliente:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="filtroNome"
+        [(ngModel)]="filtroNome"
+      />
+    </div>
+    <div class="mb-3 col-sm-4">
+      <label for="filtroCPF" class="form-label">CPF:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="filtroCPF"
+        [(ngModel)]="filtroCPF"
+      />
+    </div>
+    <div class="mb-3 col-sm-4">
+      <label for="filtroDataNascimento" class="form-label"
+        >Data de Nascimento:</label
+      >
+      <input
+        type="date"
+        class="form-control"
+        id="filtroDataNascimento"
+        [(ngModel)]="filtroDataNascimento"
+      />
+    </div>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Nome Cliente</th>
+        <th>CPF</th>
+        <th>Data Cadastro</th>
+        <th>Renda Mensal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientesFiltrados">
+        <td>{{ cliente.nome }}</td>
+        <td>{{ cliente.cpf }}</td>
+        <td>{{ cliente.dataCadastro }}</td>
+        <td>{{ cliente.rendaMensal | currency }}</td>
+        <td>
+          <button
+            class="btn btn-primary"
+            [routerLink]="['/detalhe-cliente', cliente.id]"
+          >
+            Detalhes
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

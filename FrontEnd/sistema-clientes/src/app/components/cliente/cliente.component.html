@@ -1,0 +1,55 @@
+<div class="container">
+  <h2>Cadastro de Cliente</h2>
+  <form [formGroup]="cadastroForm" (ngSubmit)="adicionarCliente()">
+    <div class="form-group">
+      <label for="nome">Nome Cliente</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        formControlName="nome"
+      />
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" formControlName="cpf" />
+    </div>
+    <div class="form-group">
+      <label for="dataNascimento">Data de Nascimento</label>
+      <input
+        type="date"
+        class="form-control"
+        id="dataNascimento"
+        formControlName="dataNascimento"
+      />
+    </div>
+    <div class="form-group">
+      <label for="rendaMensal">Renda Mensal</label>
+      <input
+        type="number"
+        class="form-control"
+        id="rendaMensal"
+        formControlName="rendaMensal"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        formControlName="email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="dataCadastro">Data de Cadastro</label>
+      <input
+        type="date"
+        class="form-control"
+        id="dataCadastro"
+        formControlName="dataCadastro"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvar</button>
+  </form>
+</div>
